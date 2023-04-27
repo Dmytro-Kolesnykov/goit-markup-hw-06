@@ -453,19 +453,55 @@
           </p>
           <label class="modal-label">
             <span class="modal-input-name">Name</span>
-            <input name="user-name" type="text" class="modal-input" />
+            <span class="input-wrap">
+              <input
+                name="user-name"
+                type="text"
+                class="modal-input"
+                required
+              />
+              <svg class="input-img">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-label">
             <span class="modal-input-name">Phone</span>
-            <input name="user-tel" type="tel" class="modal-input" />
+            <span class="input-wrap">
+              <input name="user-tel" type="tel" class="modal-input" required />
+              <svg class="input-img">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-label">
             <span class="modal-input-name">Email</span>
-            <input name="user-email" type="email" class="modal-input" />
+            <span class="input-wrap">
+              <input
+                name="user-email"
+                type="email"
+                class="modal-input"
+                required
+              />
+              <svg class="input-img">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </span>
           </label>
-          <label class="modal-label">
+          <label class="modal-label-textarea">
             <span class="modal-input-name">Comment</span>
-            <input name="iser-comment" type="text" class="modal-input" />
+            <textarea
+              name="user-comment"
+              class="modal-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <label class="modal-checkbox">
+            <input type="checkbox" class="check" value="true" required />
+            <span class="checkbox-text"
+              >I accept the terms and conditions of the</span
+            >
+            <a class="checkbox-link" href="">Privacy Policy</a>
           </label>
           <button type="submit" class="modal-send-btn">Send</button>
         </form>
