@@ -438,6 +438,28 @@
             </li>
           </ul>
         </div>
+        <div class="email-form">
+          <form>
+            <label>
+              <p class="footer-email-text">Subscribe</p>
+              <div class="footer-email-cont">
+                <input
+                  type="email"
+                  class="footer-email-input"
+                  name="email-subscribe"
+                  placeholder="E-mail"
+                  required
+                />
+                <button class="submit-btn" type="submit">
+                  <span>Subscribe</span>
+                  <svg class="submit-btn-plane">
+                    <use href="./images/symbol-defs.svg#icon-plane"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -498,9 +520,9 @@
           </label>
           <label class="modal-checkbox">
             <input type="checkbox" class="check" value="true" required />
-            <span class="checkbox-text"
-              >I accept the terms and conditions of the</span
-            >
+            <span class="checkbox-text">
+              I accept the terms and conditions of the
+            </span>
             <a class="checkbox-link" href="">Privacy Policy</a>
           </label>
           <button type="submit" class="modal-send-btn">Send</button>
